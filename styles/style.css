@@ -68,7 +68,15 @@ main .s1 div{
 .s2{
 }
 footer{
+    background-color: gainsboro;
+    height: 4rem;
 
+}
+footer p{
+    text-align: center;
+    opacity: 0.5;
+    margin: 0;
+    padding-top: 1.5rem;
 }
 @keyframes turn{
     0%{

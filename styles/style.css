@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Noodles-Regular;
+    src: url("../src/fonts/Noodles-Regular.ttf");
+}
+body{
+    margin: 0;
+}
+header{
+    height: 4rem;
+    padding: 0 0 0 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: gainsboro;
+}
+.logo{
+}
+.contacts{
+    display: flex;
+    gap: 1rem;   
+}
+.contacts button{
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+header h3{
+    font-family: Noodles-Regular;
+    font-size: 3rem;
+    position: relative;
+    top: -38px;
+}
+main{
+    background-image: url("../src/images/background.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 34rem;
+    position: relative;
+}
+main .s1{
+    border-radius: 5%;
+    background-color: gray;
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px 5px;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+
+}
+main .s1 h2{
+    font-family: Noodles-Regular;
+    font-size: 6rem;
+    position: relative;
+    top: -60px;
+    animation-name: turn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+main .s1 div{
+    text-align: center;
+}
+.s2{
+}
+footer{
+
+}
+@keyframes turn{
+    0%{
+        transform: scaleX(1);
+    }
+    25%{
+        transform: scaleX(0);
+    }
+    50%{
+        transform: scaleX(-1);
+    }
+    75%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}

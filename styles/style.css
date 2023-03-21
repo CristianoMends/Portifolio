@@ -7,12 +7,15 @@ body{
 }
 header{
     height: 4rem;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 1rem;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     background-color: gainsboro;
 }
 .logo{
+    height: 4rem;
+    display: flex;
+    gap: 2px;
 }
 .contacts{
     display: flex;
@@ -42,7 +45,12 @@ main{
     height: 34rem;
     position: relative;
 }
-main .s1{
+.containerRigth{
+    
+
+}
+.containerLeft{
+    text-align: center;
     border-radius: 5%;
     background-color: gray;
     opacity: 0.8;
@@ -50,22 +58,8 @@ main .s1{
     height: 90%;
     width: 90%;
     margin: 5%;
-
-}
-main .s1 h2{
-    font-family: Noodles-Regular;
-    font-size: 6rem;
-    position: relative;
-    top: -60px;
-    animation-name: turn;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-main .s1 div{
-    text-align: center;
-}
-.s2{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
 }
 footer{
     background-color: gainsboro;

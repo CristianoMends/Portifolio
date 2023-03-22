@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Cristiano Mendes</title>
-    <script src="scripts/app.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body >
@@ -14,10 +13,11 @@
         <div class="logo">
             
             <h3>CM</h3>
-            <h6>Cristiano Mendes <br>Desenvolvedor</h6>
+            <h5>Cristiano Mendes</h5>
         </div>
         
         <div class="contacts">
+	    <h5>Contatos</h5>
             <button style="background-image: url(src/images/whatsapp.png);"onclick="gowhatsapp()"></button>
             <button style="background-image: url(src/images/email.png);"onclick="goemail()"></button>
             <button style="background-image: url(src/images/linkedin.png);" onclick="golinkedin()"></button>
@@ -25,16 +25,17 @@
         </div>
     </header>
     <main>
-        <section class="containerLeft">
-                <button>Sobre min</button>
-                <button>Projetos</button>
+        <section class="containerLeft" id="cLeft">
+                <button id="btn1">Sobre min</button>
+                <button id="btn2">Projetos</button>
         </section>
-        <section class="s2">
-
+        <section class="containerRigth" id="cRigth">
+            
         </section>
     </main>
     <footer>
         <p>&copy;2023 Cristiano Mendes, Todos os direitos reservados</p>
     </footer>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

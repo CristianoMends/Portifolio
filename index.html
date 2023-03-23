@@ -26,11 +26,24 @@
     </header>
     <main>
         <section class="containerLeft" id="cLeft">
-                <button id="btn1">Sobre min</button>
-                <button id="btn2">Projetos</button>
+                <button id="btn1"
+                onmouseover="openPanelR()"
+                onmouseout="closePanelR()"
+                 >Sobre min</button>
+                <button id="btn2"
+                onmouseover="openPanelR()"
+                onmouseout="closePanelR()"
+                >Projetos</button>
         </section>
         <section class="containerRigth" id="cRigth">
-            
+            <div id="contentAboutMe">
+                <img src="src/images/profile.png" alt="Foto de Cristiano Mendes" width="100px" height="100px">
+                <p id="title">Quem sou eu?</p>
+                <p>Sou desenvolvedor java e Web...</p>
+            </div>
+            <div id="contentProjects">
+                <p>Meus projetos</p>
+            </div>
         </section>
     </main>
     <footer>

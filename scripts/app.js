@@ -1,11 +1,16 @@
 
 
+function openPanelR() {
+    document.getElementById("cRigth").style.visibility = "visible";
+    document.getElementById("cRigth").style.animationName = "visibleR";
 
-const botao1 = document.getElementById("btn1");
-const cLeft = document.getElementById("cLeft");
-        botao1.addEventListener("click", function() {
-            cLeft.style.width = "100px";
-});
+   const btn1 = document.getElementById("btn1");
+   const btn2 = document.getElementById("btn2");
+
+ }
+ function closePanelR(){
+    document.getElementById("cRigth").style.animationName = "hiddenR";
+ }
 function gowhatsapp(){
     window.location.href="https://wa.me/qr/3X3KO4KZIJXKI1";
     

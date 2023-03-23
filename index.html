@@ -27,12 +27,13 @@
     <main>
         <section class="containerLeft" id="cLeft">
                 <button id="btn1"
-                onmouseover="openPanelR()"
-                onmouseout="closePanelR()"
-                 >Sobre min</button>
+                onmouseover="openPanelR();showContentAboutMe()"
+                onmouseout="closePanelR();hiddenContentAboutMe()"
+                >Sobre min</button>
+
                 <button id="btn2"
-                onmouseover="openPanelR()"
-                onmouseout="closePanelR()"
+                onmouseover="openPanelR();showContentProjects()"
+                onmouseout="closePanelR();hiddenContentProjects()"
                 >Projetos</button>
         </section>
         <section class="containerRigth" id="cRigth">

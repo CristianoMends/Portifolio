@@ -1,15 +1,24 @@
 
-
 function openPanelR() {
     document.getElementById("cRigth").style.visibility = "visible";
     document.getElementById("cRigth").style.animationName = "visibleR";
-
-   const btn1 = document.getElementById("btn1");
-   const btn2 = document.getElementById("btn2");
-
  }
  function closePanelR(){
     document.getElementById("cRigth").style.animationName = "hiddenR";
+ }
+ function showContentAboutMe(){
+    document.getElementById("contentAboutMe").style.visibility = "visible";
+ }
+ function hiddenContentAboutMe(){
+    document.getElementById("contentAboutMe").style.visibility = "hidden";
+
+ }
+ function showContentProjects(){
+    document.getElementById("contentProjects").style.visibility = "visible";
+ }
+ function hiddenContentProjects(){
+    document.getElementById("contentProjects").style.visibility = "hidden";
+
  }
 function gowhatsapp(){
     window.location.href="https://wa.me/qr/3X3KO4KZIJXKI1";

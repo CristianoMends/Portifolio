@@ -1,6 +1,8 @@
 
+
 function openPanelR() {
     document.getElementById("cRigth").style.visibility = "visible";
+    document.getElementById("text").style.animationName = "textUp";
     document.getElementById("cRigth").style.animationName = "visibleR";
  }
  function closePanelR(){
@@ -11,6 +13,7 @@ function openPanelR() {
  }
  function hiddenContentAboutMe(){
     document.getElementById("contentAboutMe").style.visibility = "hidden";
+    document.getElementById("text").style.animationName = "none";
 
  }
  function showContentProjects(){
@@ -40,3 +43,5 @@ function goAboutMe(){
     window.location.href="../pages/aboutMe.html";
 
 }
+
+

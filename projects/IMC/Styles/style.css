@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main{
+  height: 100%;
+  padding: 1rem;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+}
+
+.container{
+  border: 0.1rem solid;
+  width: 50%;
+  max-width: 20rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px 1px ;
+}
+.form{
+  padding: 1rem;
+}
+.form form{  
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.age{
+  display: flex;
+  flex-direction: column;
+}
+.age input{
+  width: 50%;
+}
+.height{
+  display: flex;
+  flex-direction: column;
+}
+.height input{
+  width: 50%;
+}
+.weight{
+  display: flex;
+  flex-direction: column;
+}
+.weight input{
+  width: 50%;
+}
+input[type="radio"] {
+  display: none;
+}
+.calculate{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+.radio label{
+  display: inline-block;
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  width: 27%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+input[type="radio"]:checked + label {
+  background-color: red;
+}
+footer{
+  background: blue;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

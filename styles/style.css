@@ -10,7 +10,8 @@ body{
 header{
     height: 4rem;
     padding: 0 1rem 0 1rem;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 4fr 1fr;
     background-color: gainsboro;
 }

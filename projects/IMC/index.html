@@ -14,15 +14,16 @@
   <body>
     <header>
       <section>
-        <h1>Saude.com</h1>
+        <h1>suaSaude.com</h1>
       </section>
     </header>
     <main>
 
       <p>Insira seus dados na calculadora:</p>
+      <div class="containers">
       <section class="container">
         <div class="form">
-          <form action="index.html" method="post">
+          <form action="" method="dialog">
             <div class="gender">
               <label>Sexo</label>
               <div class="radio">
@@ -38,19 +39,25 @@
             </div>
             <div class="height">
               <label>Altura</label>
-              <input type="number" id="height" placeholder="Metros" min="1" step="any">
+              <input type="number" required title="Preencha o campo altura!" id="height" placeholder="Metros" min="1" step="any">
             </div>
             <div class="weight">
               <label>Peso</label>
-              <input type="number" id="weight" placeholder="Kilos" min="1" max="250" step="any">
+              <input type="number" required id="weight" placeholder="Kilos" min="1" max="250">
             </div>
         </div>
         <div class="calculate">
-          <button onclick="calculate()">Calcular</button>
-          <div id="load"></div>
+          <button onclick="calculateImc()">Calcular</button>
         </div>
         </form>
       </section>
+      <section id="result">
+        <figure id="resultImg">
+          <img src="" alt="imagem" id="img">
+        </figure>
+        <p id="description"></p>
+      </section>
+    </div>
     </main>
     <footer>
       <p>&copy;2023 Cristiano Mendes - Todos os direitos reservados</p>

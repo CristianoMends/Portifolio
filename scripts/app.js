@@ -33,9 +33,12 @@ projects.addEventListener("change", function() {
     if (selectedValue === "IMC") {
       projectImg.style.backgroundImage = "url(src/images/projects/IMC.png)";
       document.getElementById("projectDescription").innerText = "Este é o projeto de uma Calculadora de IMC";
-    }else if (selectedValue === "4Dev"){
-      projectImg.style.backgroundImage = "url(src/images/projects/4dev.png)";
-      document.getElementById("projectDescription").innerText = "Este é o projeto de um site";
+    }else if (selectedValue === "devweb"){
+      projectImg.style.backgroundImage = "url(src/images/projects/devweb.png)";
+      document.getElementById("projectDescription").innerText = "Site: Objetivo do site é dar os primeiros passos para criar seu primeiro site";
+    }else if (selectedValue === "..."){
+      projectImg.style.backgroundImage = "url(src/images/projects/embreve.png)";
+      document.getElementById("projectDescription").innerText = "Mais projetos em breve";
     }
   });
   
@@ -57,7 +60,7 @@ if (selectedValue === "IMC") {
         window.location.href="projects/IMC/index.html";
     }, 5000);
     
-}else if (selectedValue === "4Dev") {
+}else if (selectedValue === "devweb") {
     const loading = `
         <div class="container">
         <div class="loading"></div>
@@ -65,8 +68,11 @@ if (selectedValue === "IMC") {
     `;
     document.getElementById("cRigth").innerHTML = loading;
     setTimeout(function() {
-        window.location.href="projects/4Dev/index.html";
+        window.location.href="projects/devweb/index.html";
     }, 5000);
+}else if(selectedValue === "..."){
+	alert("Em breve, mais projetos...");
+
 }else {
     alert("Selecione um projeto!");
 }

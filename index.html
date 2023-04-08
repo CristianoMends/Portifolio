@@ -25,6 +25,9 @@
         </div>
     </header>
     <main>
+            <video autoplay loop muted>
+                <source src="src/images/background.mp4" type="video/mp4">
+            </video>
         <section class="containerLeft" id="cLeft">
                 <button id="btn1"
                 onclick="openPanelR();showContentAboutMe()"
@@ -84,7 +87,8 @@
                 <select name="Projects" id="projects" >
                     <option value="">Selecione</option>
                     <option value="IMC">Calculadora de IMC</option>
-                    <option value="4Dev" onchange="showImg()">4Dev</option>
+                    <option value="devweb" onchange="showImg()">Introdução ao Desenvolvimento Web</option>
+		    <option value="..." onchange="showImg()">em breve...</option>
                 </select>
                 <figure>
                     <img id="projectImg" height="15rem" width="15rem"></img>

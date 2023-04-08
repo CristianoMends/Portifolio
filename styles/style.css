@@ -2,6 +2,14 @@
     font-family: Noodles-Regular;
     src: url("../src/fonts/Noodles-Regular.ttf");
 }
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+}
 body{
     margin: 0;
     height: auto;
@@ -41,8 +49,6 @@ header h3{
     top: -38px;	
 }
 main{
-    background-image: url("../src/images/background.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
     height: 35rem;
     display: grid;
@@ -62,6 +68,7 @@ main{
     animation-name: scaleY;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
     overflow-y: hidden;
     background: linear-gradient(black, gray);
     display: none;
